@@ -2,7 +2,7 @@ import streamlit as st  # Importing Streamlit library for creating web apps
 import pandas as pd  # Importing pandas for data manipulation
 import numpy as np  # Importing numpy for numerical operations
 import matplotlib.pyplot as plt  # Importing matplotlib for data visualization
-from keras.models import load_model  # Importing Keras for loading the LSTM model
+from keras.models import load_model  # type: ignore # Importing Keras for loading the LSTM model
 import yfinance as yf  # Importing yfinance for fetching stock data
 from datetime import datetime  # Importing datetime for handling dates
 from sklearn.preprocessing import MinMaxScaler  # Importing MinMaxScaler for data normalization
@@ -90,4 +90,4 @@ st.write("## About this Dashboard")  # Adding a header for the about section
 st.info("""
 This dashboard allows users to enter a stock ticker, select a date range, and view the historical closing prices and predicted future prices using a trained LSTM model. 
 Data is sourced from Yahoo Finance. Predictions are based on historical data and should not be considered financial advice.
-""")  # Providing information about the dashboard
+""")  

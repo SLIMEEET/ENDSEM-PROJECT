@@ -7,9 +7,9 @@ import datetime  # Import datetime module
 import seaborn as sns  # Import seaborn for statistical data visualization
 import statsmodels.api as sm  # Import statsmodels for statistical models and tests
 from sklearn.preprocessing import MinMaxScaler  # Import MinMaxScaler from scikit-learn
-from keras.layers import Dense, Dropout, LSTM  # Import Dense, Dropout, LSTM layers from Keras
-from keras.models import Sequential  # Import Sequential model from Keras
-from keras.models import load_model  # Import load_model function from Keras
+from keras.layers import Dense, Dropout, LSTM  # type: ignore # Import Dense, Dropout, LSTM layers from Keras
+from keras.models import Sequential  # type: ignore # Import Sequential model from Keras
+from keras.models import load_model  # type: ignore # Import load_model function from Keras
 from sklearn.metrics import r2_score  # Import r2_score from scikit-learn
 from datetime import datetime  # Import datetime class from datetime module
 """# **Load Stock dataset from Yahoo finance**"""
