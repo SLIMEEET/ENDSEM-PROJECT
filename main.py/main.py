@@ -12,9 +12,9 @@ import matplotlib.dates as mdates  # Importing matplotlib.dates for date formatt
 model = load_model('LSTM_model.h5')  # Loading the pre-trained LSTM model
 
 # Page configuration
-st.set_page_config(page_title='Stock Prediction Dashboard', layout='wide')  # Configuring the Streamlit page layout and title
+st.set_page_config(page_title='InvestIQ', layout='wide')  # Configuring the Streamlit page layout and title
 # Title and introduction
-st.title('Stock Market Forecasting Dashboard')  # Adding a title to the Streamlit app
+st.title('InvestIQ')  # Adding a title to the Streamlit app
 st.markdown("""
 This interactive dashboard uses a Long Short-Term Memory (LSTM) network to predict stock prices based on historical data from Yahoo Finance.
 Select a stock ticker, define the date range, and click the predict button to see future price projections.
